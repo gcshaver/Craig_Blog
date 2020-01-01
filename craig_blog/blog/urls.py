@@ -1,6 +1,6 @@
-from django.conf.urls import include, url
+import django.conf.urls
 from . import views
 
 urlpatterns = [
-    url('', views.post_list, name='post_list')
+    django.conf.urls.url('', views.post_list, name='post_list')
 ]
